@@ -7,6 +7,7 @@ import {Doughnut} from 'react-chartjs-2'
 defaults.responsive = true;
 defaults.maintainAspectRatio = false;
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 ChartJs
 function Home() {
 const [searched,setSearchd] = useState()
@@ -70,7 +71,10 @@ useEffect(()=>{
   welcom()
 },[])
   return <section className='mt-5'>
-  
+    <Helmet>
+  <meta charSet="utf-8" />
+    <title>   Home</title>
+  </Helmet>
 
     <h2 data-aos="zoom-in-down" data-aos-duration="1500" 
     className='text-success fw-bold'> Customers Details</h2>
