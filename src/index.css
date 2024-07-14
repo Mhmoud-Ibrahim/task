@@ -1,0 +1,37 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-right:0 !important;
+  margin-left: 0 !important;
+  font-family: "word sans",sans-serif;
+background-color: #ddd;
+font-size: clamp(10px,15vw,16px);
+text-align: center;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
+:root{
+  --main-color: #243137!important;
+  --second-color:#BD9f67;
+  --theird-color:blanchedalmond !important;
+}
+.table {
+    font-family: arial, sans-serif;
+    border: 1px solid var(--main-color) !important;
+    border-radius: 20px !important;
+    margin: auto !important;
+    padding: 0;
+  
+  }
+
+  
+  tr:nth-child(even) {
+    background-color: #ddddddca;
+  }
